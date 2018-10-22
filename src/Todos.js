@@ -12,7 +12,7 @@ const Todos = ({ todos, deleteTodo }) => {
               onClick={() => {
                 deleteTodo(todo.id);
               }}
-              className="waves-effect waves-light btn blue"
+              className="waves-effect waves-light btn-small blue"
             >
               Delete
             </button>
@@ -21,7 +21,7 @@ const Todos = ({ todos, deleteTodo }) => {
       );
     })
   ) : (
-    <p className="center">You no longer have any todo's left</p>
+    <p className="center">You do not currently have any todo's</p>
   );
   return <div className="todos collection">{todoList}</div>;
 };
